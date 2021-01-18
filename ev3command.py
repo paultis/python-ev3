@@ -16,14 +16,6 @@ class ev3command:
         self.parse_args()
         self.run_command()
         
-    # def get_number(self, s):
-    #     # TODO check type to see if string or number
-    #     if isinstance(s, float) or isinstance(s, int):
-    #         return s
-    #     else: 
-    #         s = float(s)
-    #         return s
-
     def on_for_rotations(self):
         print('speed ' + str(self.speed), file=stderr)
         print('rotations ' + str(self.rotations), file=stderr)
